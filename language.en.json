@@ -1,0 +1,41 @@
+{
+	"msg":
+	{
+		"bindingCtrl": "Use Ctrl+ for new shortcut?",
+		"bindingKeycode": "Enter a new shortcut key",
+		"bindingRemoved": "\nRemoving duplicate shortcut: ",
+		"bindingNew": "New shortcut for ",
+		"confirmWipe": "Are you sure you want to wipe the canvas?"
+	},
+	"tool": 
+	{
+		"brush": "Brush",
+		"eraser": "Eraser",
+		"eyedropper": "Eyedropper",
+		"zoom": "Zoom",
+		"marquee": "Marquee select",
+		"lasso": "Lasso select",
+		"wand": "Wand select",
+		"move": "Move",
+		"fill": "Fill",
+		"gradient": "Gradient",
+		"jumble": "Jumble"
+	},
+	"action": 
+	{
+		"flip": "Flip",
+		"undo": "Undo",
+		"redo": "Redo",
+		"save": "Upload",
+		"download": "Save",
+		"wipe": "Wipe",
+		"mask": "No Mask",
+		"maskOut": "Mask",
+		"maskIn": "Remask"
+	},
+	"control": 
+	{
+		"sizeUp": "Increase Size",
+		"sizeDn": "Decrease Size"
+	}
+}

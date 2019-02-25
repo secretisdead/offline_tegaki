@@ -1,0 +1,369 @@
+#nkTegaki
+{
+	
+}
+/*no select*/
+#nkTegaki *
+{
+   -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+	font-size: 0;
+}
+/*workspace*/
+#nktWorkspace
+{
+	display: block;
+	background-color: #ffffff;
+	background-image: url(bg.png);
+	text-align: center;
+	padding: 32px;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+}
+#nktCanvas
+{
+	background-color: #ffffff;
+}
+.nktControl
+{
+	vertical-align: middle;
+}
+#palletteInput
+{
+	visibility: hidden;
+	width: 0;
+	height: 0;
+	margin: 0;
+	padding: 0;
+}
+/*icons*/
+.nktTool, 
+.nktAction, 
+.nktControl, 
+.nktTone
+{
+	display: inline-block;
+	background-image: url(ui.png);
+	cursor: pointer;
+	border: none;
+	border-radius: 4px;
+	margin: 2px;
+}
+.nktTool, .nktAction
+{
+	width: 34px;
+	height: 34px;
+}
+.nktControl
+{
+	width: 28px;
+	height: 28px;
+}
+.nktTone
+{
+	width: 21px;
+	height: 21px;
+	border-width: 3px;
+	border-style: solid;
+	border-color: #606060;
+	border-radius: 50%;
+}
+/*tool*/
+.toolBrush
+{
+	background-position: 0 0;
+}
+.toolEraser
+{
+	background-position: -34px 0;
+}
+.toolZoom
+{
+	background-position: -68px 0;
+}
+.toolGrab
+{
+	background-position: -102px 0;
+}
+.toolMarquee
+{
+	background-position: -136px 0;
+}
+.toolLasso
+{
+	background-position: -170px 0;
+}
+.toolWand
+{
+	background-position: -204px 0;
+}
+.toolMove
+{
+	background-position: -238px 0;
+}
+.toolFill
+{
+	background-position: -272px 0;
+}
+.toolGradient
+{
+	background-position: -306px 0;
+}
+.toolJumble
+{
+	background-position: -340px 0;
+}
+.toolEyedropper
+{
+	background-position: -204px -34px;
+}
+/*action*/
+/** /
+.actionPallette
+{
+	background-position: 0 -68px;
+}
+/**/
+.actionFlip
+{
+	background-position: 0 -34px;
+}
+.actionUndo
+{
+	background-position: -34px -34px;
+}
+.actionRedo
+{
+	background-position: -68px -34px;
+}
+.actionSave
+{
+	background-position: -136px -34px;
+}
+.actionDownload
+{
+	background-position: -102px -34px;
+}
+.actionWipe
+{
+	background-position: -170px -34px;
+}
+.actionMask
+{
+	background-position: -238px -34px;
+}
+.actionMask.out
+{
+	background-position: -272px -34px;
+}
+.actionMask.in
+{
+	background-position: -306px -34px;
+}
+/*control*/
+.controlShapeDn
+{
+	background-position: 0 -68px;
+}
+.controlShapeUp
+{
+	background-position: -28px -68px;
+}
+.controlPallette
+{
+	background-position: -56px -68px;
+}
+/**/
+.controlShapeDisplay
+{
+	display: inline-block;
+	width: 22px;
+	text-align: center;
+	font-weight: bold;
+	margin-right: 2px;
+	color: #ffffff;
+}
+#nkTegaki  .controlShapeDisplay
+{
+	font-size: 11px;
+}
+.controlShapeDisplay, .controlShapeSlide
+{
+	vertical-align: middle;
+}
+/*icon default backgrounds*/
+.nktTool:hover, 
+.nktAction:hover, 
+.nktControl:hover
+{
+	background-color: #404040;
+}
+.nktTone:hover
+{
+	border-color: #808080;
+}
+/*icon special backgrounds*/
+.nktTone
+{
+	background-color: #ffffff;
+}
+.flipped .actionFlip
+{
+	background-color: #808080;
+}
+.actionSave:hover
+{
+	background-color: #00c0ff;
+}
+.actionDownload:hover
+{
+	background-color: #008000;
+}
+.actionWipe:hover
+{
+	background-color: #ff0000;
+}
+/*icon selected backgrounds*/
+.nktTool.selected
+{
+	cursor: default;
+	background-color: #808080;
+}
+.nktTone.selected
+{
+	cursor: default;
+	border-color: #ffffff;
+}
+.nktTool:active, .nktTool.active,
+.nktAction:active, .nktAction.active,
+.nktControl:active, .nktControl.active
+{
+	background-color: #ffffff;
+}
+.nktTone:active, .nktTone.active
+{
+	border-color: #ffffff;
+}
+/*menu position*/
+#nktMenu
+{
+	text-align: left;
+	background-color: #000000;
+	padding: 4px;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	font-size: 0;
+}
+#nktMenuTool, #nktMenuAction, #nktMenuControl, #nktMenuTone
+{
+	display: inline-block;
+	vertical-align: middle;
+}
+#nktMenuTool + br, #nktMenuControl + br
+{
+	display: none;
+}
+#nktMenuTone
+{
+	margin-left: 4px;
+}
+/*slider*/
+input[type=range]
+{
+    -webkit-appearance: none;	/*removes default webkit styles*/
+	border: none;	/*fix for FF unable to apply focus style bug */
+    width: 56px;	/*required for proper track sizing in FF*/
+}
+input[type=range]::-webkit-slider-runnable-track
+{
+	width: 56px;
+	height: 6px;
+	background: #aaaaaa;
+	border: none;
+}
+input[type=range]::-webkit-slider-thumb
+{
+	-webkit-appearance: none;
+	border: none;
+	height: 16px;
+	width: 16px;
+	border-radius: 50%;
+	background: #ffffff;
+	margin-top: -5px;
+}
+input[type=range]:focus
+{
+	outline: none;
+}
+input[type=range]:focus::-webkit-slider-runnable-track
+{
+	background: #aaaaaa;
+}
+input[type=range]::-moz-range-track
+{
+	width: 56px;
+	height: 6px;
+	background: #aaaaaa;
+	border: none;
+}
+input[type=range]::-moz-range-thumb
+{
+	border: none;
+	height: 16px;
+	width: 16px;
+	border-radius: 50%;
+	background: #ffffff;
+}
+/*hide the outline behind the border*/
+input[type=range]:-moz-focusring
+{
+	outline: 1px solid transparent;
+	outline-offset: -1px;
+}
+
+input[type=range]::-ms-track
+{
+	width: 56px;
+	height: 6px;
+	background: transparent; /*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
+	border-color: transparent; /*leave room for the larger thumb to overflow with a transparent border */
+	border-width: 4px 0;
+	color: transparent;	/*remove default tick marks*/
+}
+input[type=range]::-ms-fill-lower
+{
+	background: #aaaaaa;
+}
+input[type=range]::-ms-fill-upper
+{
+	background: #aaaaaa;
+}
+input[type=range]::-ms-thumb
+{
+	border: none;
+	height: 16px;
+	width: 16px;
+	border-radius: 50%;
+	background: #ffffff;
+}
+input[type=range]:focus::-ms-fill-lower
+{
+	background: #aaaaaa;
+}
+input[type=range]:focus::-ms-fill-upper
+{
+	background: #aaaaaa;
+}
+/*workspace cursors*/
+#nktWorkspace.eyedropper
+{
+	cursor: url('eyedropper.cursor.png') 4 27, default;
+}
+#nktWorkspace.fill
+{
+	cursor: url('fill.cursor.png') 3 25, default;
+}

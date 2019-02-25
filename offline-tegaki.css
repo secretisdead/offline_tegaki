@@ -1,0 +1,56 @@
+body {
+	font-family: Tahoma, sans-serif;
+	margin: 0.5rem;
+}
+form {
+	margin-bottom: 0.5rem;
+	font-size: 0;
+}
+label {
+	background-color: #000000;
+	color: #ffffff;
+	text-align: right;
+}
+form input, form label {
+	display: inline-block;
+	font-size: 1rem;
+	box-sizing: border-box;
+	padding: 0 0.5rem;
+	line-height: 1.5rem;
+	border: 1px solid #000000;
+	vertical-align: bottom;
+}
+label[for="tegaki-width"],
+#tegaki-width,
+label[for="tegaki-height"],
+#tegaki-height {
+	width: 25%;
+	margin: 0;
+}
+#tegaki-dimensions-submit {
+	display: block;
+	width: 100%;
+	border-bottom-left-radius: 0.5rem;
+	border-bottom-right-radius: 0.5rem;
+	border-top: none;
+	cursor: pointer;
+}
+form br {
+	display: none;
+}
+label[for="tegaki-width"] {
+	border-top-left-radius: 0.5rem;
+}
+#tegaki-height {
+	border-top-right-radius: 0.5rem;
+}
+#nktMenu,
+#nktWorkspace {
+	border: 1px solid #000000;
+}
+#nktMenu {
+	border-bottom: none;
+}
+#nktWorkspace {
+	border-top: none;
+}

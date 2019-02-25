@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<meta 
+			name="tegaki-resource-uri" 
+			content="./">
+		<link rel="stylesheet" type="text/css" href="./tegaki.css">
+		<link rel="stylesheet" type="text/css" href="./offline-tegaki.css">
+		<script src="./jquery-3.2.1.min.js"></script>
+		<script src="./tegaki.js"></script>
+		<script src="./helper.js"></script>
+	</head>
+	<body>
+		<form id="tegaki-dimensions" data-confirm-clear="Resizing will clear the current canvas, are you sure?">
+			<label 
+				for="tegaki-width">Width</label>
+			<input 
+				id="tegaki-width" 
+				name="tegaki-width" 
+				type="text" 
+				value="512">
+			<br>
+			<label 
+				for="tegaki-height">Height</label>
+			<input 
+				id="tegaki-height" 
+				name="tegaki-height" 
+				type="text" 
+				value="512">
+			<br>
+			<input 
+				id="tegaki-dimensions-submit" 
+				type="submit" 
+				value="Change dimensions">
+		</form>
+		<div id="placeholder">Loading...</div>
+		<script src="./offline-tegaki.js"></script>
+	</body>
+</html>

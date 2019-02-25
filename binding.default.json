@@ -1,0 +1,44 @@
+{
+	"mod": {
+		"add": [16, false],
+		"move": [17, false],
+		"subtract": [18, false]
+	},
+	"tool": {
+		"brush": [66, false],
+		"eraser": [69, false],
+		"zoom": [90, false],
+		"marquee": [77, false],
+		"lasso": [76, false],
+		"wand": [87, false],
+		"move": [86, false],
+		"fill": [70, false],
+		"gradient": [71, false],
+		"jumble": [82, false]
+	},
+	"action": {
+		"copy": [67, true],
+		"deselect": [68, true],
+		"merge": [69, true],
+		"flip": [72, false],
+		"invertSelection": [73, true],
+		"newLayer": [76, true],
+		"download": [81, true],
+		"save": [83, true],
+		"transform": [84, true],
+		"paste": [86, true],
+		"cut": [88, true],
+		"redo": [89, true],
+		"undo": [90, true],
+		"clearIn": [46, false],
+		"clearOut": [46, true],
+		"wipe": [8, false]
+	},
+	"control": {
+		"shapeDn": [65, false],
+		"shapeUp": [83, false]
+	},
+	"headless": {
+		"swap": [88, false]
+	}
+}
